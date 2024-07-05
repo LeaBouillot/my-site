@@ -11,6 +11,9 @@
     "tailwind": "npx tailwindcss -i ./src/index.css -o ./src/output.css --watch"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "D": "^1.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
