@@ -15,12 +15,20 @@ export default function Home() {
         justifyContent: 'center',
         textAlign: 'center',
     };
+
+    const backgroundStyle = {
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+    };
+
     return (
-        <main className={homeStyle}>
+        <main style={homeStyle}>
+            <img src={backgroundImage} alt=" background image" style={backgroundStyle} />
             <Navbar />
             <h1>Brandon Johnson</h1>
             <p>I'm Developpeur</p>
             <Icons />
         </main>
-    )
+    );
 }
