@@ -17,7 +17,7 @@ export default function Header() {
           I'm{" "}
           <span
             className="typed"
-            data-typed-items="Designer, Developer,     Freelancer, Photographer"
+            data-typed-items="Designer, Developer, reelancer, Photographer"
           ></span>
         </p>
       </div>
