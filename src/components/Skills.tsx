@@ -4,8 +4,7 @@ import AOS from "aos";
 import { ProgressBar } from "react-bootstrap";
 
 const Skills = () => {
-  
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
