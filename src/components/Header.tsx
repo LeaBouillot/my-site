@@ -1,46 +1,48 @@
-import React, { useState } from "react";
-
-import { headerNav } from "../constants";
-
-export default function Header() {
-  const [show, setShow] = useState(false);
-
-  const ToggleMenu = () => {
-    setShow((prevShow) => !prevShow);
-  };
-
+function Header() {
   return (
-    <header d="hero" className="d-flex flex-column justify-content-center">
-      <div className="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Brandon Johnson</h1>
-        <p>
-          I'm{" "}
-          <span
-            className="typed"
-            data-typed-items="Designer, Developer, reelancer, Photographer"
-          ></span>
-        </p>
-      </div>
-      <nav>
-        <ul>
-          {headerNav.map((navItem) => (
-            <li key={navItem.title}>
-              <a href={navItem.url}>{navItem.title}</a>
+    <div>
+      {/* <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" className="mobile-nav-toggle d-xl-none"><i className="bi bi-list mobile-nav-toggle"></i></button> */}
+      <i className="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+      <header id="header" className="d-flex flex-column justify-content-center">
+        <nav id="navbar" className="navbar nav-menu">
+          <ul>
+            <li>
+              <a href="#hero" className="nav-link scrollto active">
+                <i className="bx bx-home"></i> <span>Home</span>
+              </a>
             </li>
-          ))}
-        </ul>
-      </nav>
-      <div
-        className="header__nav__mobile"
-        id="headerToggle"
-        aria-controls="primary-menu"
-        aria-expanded={show ? "true" : "false"}
-        role="button"
-        tabIndex="0"
-        onClick={ToggleMenu} //menu burger
-      >
-        <span></span>
-      </div>
-    </header>
+            <li>
+              <a href="#about" className="nav-link scrollto">
+                <i className="bx bx-user"></i> <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" className="nav-link scrollto">
+                <i className="bx bx-file-blank"></i> <span>Resume</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="nav-link scrollto">
+                <i className="bx bx-book-content"></i> <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#services" className="nav-link scrollto">
+                <i className="bx bx-server"></i> <span>Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link scrollto">
+                <i className="bx bx-envelope"></i> <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
   );
 }
+
+export default Header;
