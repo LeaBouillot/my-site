@@ -1,8 +1,8 @@
-function Header() {
+const Header = () => {
   return (
     <div>
       {/* <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" className="mobile-nav-toggle d-xl-none"><i className="bi bi-list mobile-nav-toggle"></i></button> */}
+<button type="button" className="mobile-nav-toggle d-xl-none"><i className="bi bi-list mobile-nav-toggle"></i></button> */}
       <i className="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
       <header id="header" className="d-flex flex-column justify-content-center">
@@ -43,6 +43,6 @@ function Header() {
       </header>
     </div>
   );
-}
+};
 
 export default Header;
