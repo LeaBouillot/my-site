@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import profileImg from "../assets/img/profile-img.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -27,11 +28,7 @@ const About = () => {
 
           <div className="row">
             <div className="col-lg-4">
-              <img
-                src="assets/img/profile-img.jpg"
-                className="img-fluid"
-                alt="profile image"
-              />
+              <img src={profileImg} className="img-fluid" alt="" />
             </div>
             <div className="pt-4 col-lg-8 pt-lg-0 content">
               <h3>UI/UX Designer &amp; Web Developer.</h3>

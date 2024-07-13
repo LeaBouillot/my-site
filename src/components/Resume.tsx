@@ -1,6 +1,17 @@
-
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Resume = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, //Durée animation 1 second
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+  
   return (
     <>
       <section id="resume" className="resume">
