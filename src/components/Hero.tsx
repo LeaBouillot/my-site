@@ -1,4 +1,15 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, //Durée animation 1 second
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <div>
       <section id="hero" className="d-flex flex-column justify-content-center">
